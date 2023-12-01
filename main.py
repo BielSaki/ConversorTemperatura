@@ -1,15 +1,12 @@
 print("hello world") 
 def main():
- x = input("Me diga um número em °C:")
+ c = int(input("Me diga um número em °C:"))
  try:
-  xx = int( x )
-  print("sua temperatura em °C é {}" .format(x), end=', ')
-  y = 273
-  yy = int( y )
-  z = 1.8 * xx
-  zz = float( z )
-  print("sua temperatura em °K é {}" .format(xx+yy), end=', ')
-  print("sua temperatura em F é {}." .format(zz+32))
+  print(f"sua temperatura em °C é {c}", end=', ')
+  k = 273
+  f = 1.8 * c
+  print(f"sua temperatura em °K é {c+k}", end=', ')
+  print(f"sua temperatura em F é {c+f}.")
  except (ValueError): print("Por favor, insira apenas números!")
 
 main()
